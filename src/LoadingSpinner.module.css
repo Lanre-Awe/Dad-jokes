@@ -1,0 +1,35 @@
+.spinner {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 5% 30% 10% 27%;
+  /* text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.spinner:after {
+  content: " ";
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid darkcyan;
+  border-color: darkcyan transparent darkcyan transparent;
+  animation: spinner 1.2s linear infinite;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 500px) {
+  .spinner {
+    margin: 25% 50% 30% 43%;
+  }
+}
